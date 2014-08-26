@@ -11,6 +11,7 @@ if ( !file_exists($dir) ) {
 }
 ?>
 
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
@@ -38,11 +39,22 @@ if ( !file_exists($dir) ) {
     <script>
     $(document).foundation();
 </script>
+=======
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+    <title>Partage Mot de passe</title>
+    <head>
+    <title>Inscription</title>
+    </head>
+    <body>
+>>>>>>> f1173c7280398eb792db01675fd27ea0dca86840
 
 
 
 
 
+<<<<<<< HEAD
 <?php
 include('navbar.php');
 
@@ -57,6 +69,22 @@ if(isset($_GET['code']) and isset($_GET['temp'])){
 }else {
     include('create.php');
 }
+=======
+
+<?php
+    
+    if(isset($_GET['code']) and isset($_GET['temp'])){
+    
+        include('client.php');
+
+    }else if(isset($_POST['code'])){
+        include('validation.php');
+    }else if(isset($_GET['codeError']) && $_GET['codeError']==2){
+        include('expiration.php');
+    }else {
+        include('create.php');
+    }
+>>>>>>> f1173c7280398eb792db01675fd27ea0dca86840
 
 
 ?>
