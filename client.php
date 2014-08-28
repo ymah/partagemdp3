@@ -54,7 +54,11 @@ if((time() - $temp) > 1200){
     <p><label>Veuillez reproduire les numéros présents sur le captcha</label><p>
 <?php
 
+<<<<<<< HEAD
     echo '<img src="captcha.php" alt="CAPTCHA" />';
+=======
+    echo '<img src="captcha2.php" alt="CAPTCHA" />';
+>>>>>>> 1b053e17c0a55f8b946a30a547e97c3c4a5c22e4
 
 ?>
 <p>B : <input type="text" name ="code"/></p>

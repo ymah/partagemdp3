@@ -9,6 +9,7 @@ $dir = 'file/key';
 if ( !file_exists($dir) ) {
     mkdir ($dir, 0770);
 }
+<<<<<<< HEAD
 session_start();
 
 $identifiantAdmin = 'runiso';
@@ -33,6 +34,12 @@ if(isset($_POST['IDADMIN']) and isset($_POST['MDPADMIN'])){
 
 ?>
 
+=======
+?>
+
+<<<<<<< HEAD
+
+>>>>>>> 1b053e17c0a55f8b946a30a547e97c3c4a5c22e4
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
     <html class="no-js" lang="en" >
@@ -54,6 +61,7 @@ if(isset($_POST['IDADMIN']) and isset($_POST['MDPADMIN'])){
 
     </head>
     <body>
+<<<<<<< HEAD
 
 
 <?php
@@ -63,6 +71,31 @@ include('header.php');
 <div class="row">
 <br/><br/>
 <?php
+=======
+    <script src="zurb/js/vendor/jquery.js"></script>
+    <script src="zurb/js/foundation.min.js"></script>
+    <script>
+    $(document).foundation();
+</script>
+=======
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+    <title>Partage Mot de passe</title>
+    <head>
+    <title>Inscription</title>
+    </head>
+    <body>
+>>>>>>> f1173c7280398eb792db01675fd27ea0dca86840
+
+
+
+
+
+<<<<<<< HEAD
+<?php
+include('navbar.php');
+>>>>>>> 1b053e17c0a55f8b946a30a547e97c3c4a5c22e4
 
 if(isset($_GET['code']) and isset($_GET['temp'])){
     
@@ -73,6 +106,7 @@ if(isset($_GET['code']) and isset($_GET['temp'])){
 }else if(isset($_GET['codeError']) && $_GET['codeError']==2){
     include('expiration.php');
 }else {
+<<<<<<< HEAD
 ?>
 
 <?php
@@ -92,5 +126,28 @@ if(isset($_GET['code']) and isset($_GET['temp'])){
     $(document).foundation();
 </script>
 
+=======
+    include('create.php');
+}
+=======
+
+<?php
+    
+    if(isset($_GET['code']) and isset($_GET['temp'])){
+    
+        include('client.php');
+
+    }else if(isset($_POST['code'])){
+        include('validation.php');
+    }else if(isset($_GET['codeError']) && $_GET['codeError']==2){
+        include('expiration.php');
+    }else {
+        include('create.php');
+    }
+>>>>>>> f1173c7280398eb792db01675fd27ea0dca86840
+
+
+?>
+>>>>>>> 1b053e17c0a55f8b946a30a547e97c3c4a5c22e4
 </body>
 </html>

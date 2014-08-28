@@ -28,6 +28,7 @@ $key = $aes->decrypt(base64_decode($tab[2]));
 $rsa->setPrivateKey($key);
 $ident = $rsa->decrypt(base64_decode($tab[0]));
 $mdp = $rsa->decrypt(base64_decode($tab[1]));
+<<<<<<< HEAD
 echo "
 <div class=\"row\">
 <div class=\"panel\">
@@ -39,3 +40,6 @@ echo "
 </div>
 </div>
 ";
+=======
+echo $ident."<br/>".$mdp;
+>>>>>>> 1b053e17c0a55f8b946a30a547e97c3c4a5c22e4

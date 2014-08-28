@@ -1,8 +1,10 @@
 clean:
 	rm -rf *~ *#
 fullclean:
+
 	sudo rm -rf *~ *# file/* .git
 
+	sudo rm -rf *~ *# file/*
 commit:
 	git init
 	git add *
@@ -14,3 +16,5 @@ recommit:
 	git add *
 	git commit -m 'test'
 	git push -u origin master
+	git push -u origin master
+
