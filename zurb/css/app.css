@@ -1,0 +1,35 @@
+body {
+
+background-color:#E9821C;
+color:white;
+}
+
+label {
+
+color:white;
+
+}
+#footer {
+
+background-color:#F7B73E;
+
+}
+
+#header {
+background-color:white;
+
+}
+
+
+fieldset {
+
+background-color:#565658;
+width:100%;
+}
+
+
+fieldset legend {
+
+background-color:#005890;
+
+}
